@@ -56,3 +56,14 @@ print '-----Membership-----'
 permission = 'rw'
 print 'w' in permissions
 print 'x' in permissions
+
+#Length, Minimum, and Maximum
+numbers = [100, 34, 678]
+print len(numbers)
+print max(numbers)
+print min(numbers)
+print max(2,3)
+print max(9, 3, 2, 5)
+
+
+
