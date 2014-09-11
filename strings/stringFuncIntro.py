@@ -13,3 +13,8 @@ printSeparateLines('string formatting')
 format = "hello, %s. %s enough for ya?"
 values = ('world', 'Hot')
 print format % values
+
+format = "Pi with three decimals: %.3f"
+from math import pi
+print format % pi
+
