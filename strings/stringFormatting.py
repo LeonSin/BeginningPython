@@ -40,3 +40,34 @@ d = {}
 d['thing'] = 'gentleman'
 d['action'] = 'show his socks'
 print s.substitute(d)
+
+# simple conversion
+printSeparateLines('simple conversion')
+print 'Price of eggs: $%d' % 42
+print 'Hexadecimal price of eggs: %x' % 42
+
+from math import pi
+print 'Pi: %f...' % pi
+print 'Very inexact estimate of pi: %i' % pi
+print 'Using str: %s' % 42L
+print 'Using repr: %r' % 42L
+
+# width and precision
+printSeparateLines('width and precision')
+print '%10f' % pi # Field width 10
+print '%10.2f' % pi # Field width 10, precision 2
+print '%.2f' % pi # Precision 2
+print '%.5s' % 'Guido van Rossum'
+print '%5s' % 'Guido van Rossum'
+
+# Signs, alignment,and zero-padding
+printSeparateLines('Signs, alignment,and zero-padding')
+print '%010.2f' % pi
+print '%-10.2f' % pi # any extra space is put on the right-hand side of the number
+
+# A blank(" ") means that a blank should be put in front of positive numbers
+print('% 5d' % 10) + '\n' + ('% 5d' % -10)
+
+# Finally, a plus (+) means that a sign (either plus or minus) 
+# should precede both positive and negative numbers
+print ('%+5d' % 10) + '\n' + ('%+5d' % -10)
