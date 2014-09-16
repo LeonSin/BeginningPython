@@ -4,3 +4,6 @@ print 'Age:', 42
 print 1, 2, 3
 print (1, 2, 3)
 
+# import something as someting
+import math as foobar
+foobar.sqrt(4)
