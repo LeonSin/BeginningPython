@@ -6,4 +6,7 @@ print (1, 2, 3)
 
 # import something as someting
 import math as foobar
-foobar.sqrt(4)
+print foobar.sqrt(4)
+
+from math import sqrt as foobar
+print foobar(4)
