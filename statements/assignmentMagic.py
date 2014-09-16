@@ -26,3 +26,12 @@ x = tuple([1, 2, 3])
 y = tuple([1, 2, 3])
 print 'x = y' if x == y else 'x <> y'
 
+# Augmented Assignments
+x = 2
+x += 1
+x *= 2
+
+y = 'foo'
+y += 'bar'
+y *= 2
+print y
