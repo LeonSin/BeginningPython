@@ -46,3 +46,7 @@ print [2, [1, 4]] < [2, [1, 5]]
 # ternary operator / conditional operator
 # a if b else c
 # If b is true, a is returned; otherwise, c is returned.
+
+# Assertion
+age = -1
+assert 0 < age < 100, 'The age must be realistic' # chain comparison
