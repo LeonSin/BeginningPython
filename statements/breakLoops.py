@@ -8,3 +8,8 @@ for n in range(99, 0, -1):
 
 # range function
 print range(0, 10, 2)
+
+# continue - terminates the current loop
+# and jumps to the next one
+
+
