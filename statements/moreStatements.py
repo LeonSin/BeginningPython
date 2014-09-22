@@ -33,3 +33,18 @@ print x
 # there is no way to delete values in Python
 del x
 print y
+
+# Executing and evaluating strings with exec and eval
+# learn to execute Python code stored in a string
+
+# exec
+exec "print 'Hello, world!'"
+
+# namespace and scope
+from math import sqrt
+scope = {}
+exec 'sqrt = 1' in scope
+print sqrt(4)
+print scope['sqrt']
+print len(scope)
+print scope.keys()
