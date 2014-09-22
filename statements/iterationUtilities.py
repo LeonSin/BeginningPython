@@ -1,3 +1,4 @@
+# Parallel iteration
 names = ['anne', 'beth', 'george', 'damon']
 ages = [12, 45, 32, 102]
 
@@ -9,3 +10,10 @@ for i in range(len(names)):
 # sequences, returning a list of tuples:
 
 print zip(names, ages)
+
+
+# range calculates all the numbers
+# xrange calculates only those numbers needed
+print zip(range(5), xrange(10000000))
+
+# 
