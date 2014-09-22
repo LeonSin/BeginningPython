@@ -16,4 +16,14 @@ print zip(names, ages)
 # xrange calculates only those numbers needed
 print zip(range(5), xrange(10000000))
 
-# 
+# Number iteraton
+
+# enumerate() function lets you iterate over 
+# index-value pairs,where the indices are
+# supplied automatically
+strings = ['xxx00xxx000xx000', 'xxx000', '000']
+print list(enumerate(strings))
+for index, string in enumerate(strings):
+	if 'xxx' in string:
+		strings[index] = '[censored]'
+print strings
