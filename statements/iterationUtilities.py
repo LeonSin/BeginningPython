@@ -27,3 +27,10 @@ for index, string in enumerate(strings):
 	if 'xxx' in string:
 		strings[index] = '[censored]'
 print strings
+
+# Reversed and sorted iteration
+print sorted([4, 3, 6, 8, 3])
+print sorted('Hello, world!')
+print list(reversed('Hello, world!'))
+print ''.join(reversed('Hello, world!'))
+
