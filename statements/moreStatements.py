@@ -48,3 +48,8 @@ print sqrt(4)
 print scope['sqrt']
 print len(scope)
 print scope.keys()
+
+# eval
+# eval evaluates a Python expression (written in a string) 
+# and returns the resulting value
+print eval(raw_input("Enter an arithmetic expression: "))
