@@ -28,3 +28,8 @@ x = ["Hello", "world"]
 y = x
 y[1]="python"
 print x
+
+# del delete only the name, not the value.
+# there is no way to delete values in Python
+del x
+print y
