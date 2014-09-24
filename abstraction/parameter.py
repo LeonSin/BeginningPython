@@ -20,3 +20,18 @@ def square(x):
 	'Calculates the square fo the number x.'
 	return x * x 
 print square.__doc__
+
+# help(square)
+
+# functions that aren't really functions
+
+def test():
+    print 'This is printed'
+	return
+
+x = test()
+print x
+
+# return None
+
+# the magic of parameters
