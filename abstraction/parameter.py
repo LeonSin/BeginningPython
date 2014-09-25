@@ -27,7 +27,6 @@ print square.__doc__
 
 def test():
     print 'This is printed'
-	return
 
 x = test()
 print x
@@ -35,3 +34,7 @@ print x
 # return None
 
 # the magic of parameters
+
+# Parameters are kept in what is called a local scope
+
+# keyword parameters and defaults
