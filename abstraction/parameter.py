@@ -75,6 +75,7 @@ def print_params(*params):
     """
     collecting parameters
     The star in front of the parameter puts all the values into the same tuple
+    *params refers to a tuple
     """
     print params
 
@@ -84,10 +85,19 @@ print_params(1, 2, 3)
 
 def print_params_2(title, *params):
     """
-
+    collecting parameters
     """
     print title
     print params
 
 print_params_2('Params:', 1, 2, 3)
 print_params_2('Nothing:')
+
+
+def print_params_3(**params):
+    """
+    **params refers to a map
+    """
+    print params
+
+print_params_3(x=1, y=2, z=3)
