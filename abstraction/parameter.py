@@ -32,6 +32,7 @@ print square.__doc__
 def test():
     print 'This is printed'
 
+
 xlink = test()
 
 print xlink
@@ -66,6 +67,7 @@ def hello_3(greeting='Hello', name='world'):
     """ arguments that have default values"""
     print '%s, %s!' % (greeting, name)
 
+
 hello_3()
 hello_3('Greetings')
 hello_3('Greetings', 'universe')
@@ -79,6 +81,7 @@ def print_params(*params):
     """
     print params
 
+
 print_params('Testing')
 print_params(1, 2, 3)
 
@@ -90,6 +93,7 @@ def print_params_2(title, *params):
     print title
     print params
 
+
 print_params_2('Params:', 1, 2, 3)
 print_params_2('Nothing:')
 
@@ -99,6 +103,7 @@ def print_params_3(**params):
     **params refers to a map
     """
     print params
+
 
 print_params_3(x=1, y=2, z=3)
 
@@ -111,14 +116,14 @@ def print_params_4(x, y, z=3, *pospar, **keypar):
     print pospar
     print keypar
 
+
 print_params_4(1, 2, 3, 5, 6, 7, foo=1, bar=2)
-
-
 
 
 def add(x, y):
     # reverse the process described above
     return x + y
+
 
 params = (1, 2)
 print add(*params)
@@ -141,4 +146,45 @@ def call_foo(*args, **kwds):
     foo(*args, **kwds)
 
 # This can be particularly useful when calling the constructor of a superclass
-call_foo(1,2,3, m=1, n=2)
+call_foo(1, 2, 3, m=1, n=2)
+
+
+# parameters practice
+def story(**kwds):
+    return 'Once upon a time, there was a ' \
+           '%(job)s called %(name)s.' % kwds
+
+
+def power(x, y, *others):
+    if others:
+        print 'Received redundant parameters:', others
+    return pow(x, y)
+
+
+def interval(start, stop=None, step=1):
+    'Imitates range() for step > 0'
+    if stop is None:             # If the stop is not supplied...
+        start, stop = 0, start   # shuffle the parameters
+    result = []
+    i = start                    # We start counting at the start index
+    while i < stop:              # Until the index reaches the stop index...
+        result.append(i)         # ...append the index to the result...
+        i += step                # ...increment the index with the step (> 0)
+    return result
+
+
+print story(job='king', name='Gumby')
+print story(name='Sir Robin', job='brave knight')
+params = {'job': 'language', 'name': 'Python'}
+print story(**params)
+del params['job']
+print story(job='stroke of genius', **params)
+print power(2, 3)
+print power(3, 2)
+print power(y=3, x=2)
+params = (5,) * 2
+print power(3, 3, 'Hello, world')
+print interval(10)
+print interval(1, 5)
+print interval(3, 12, 4)
+print power(*interval(3, 7))
