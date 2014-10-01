@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#!/usr/local/bin/python
+#!/usr/bin/python
 
 import string
 
@@ -73,3 +73,5 @@ print table[97:123]
 print maketrans('', '')[97:123]
 
 print 'this is an incredible test'.translate(table)
+
+print 'over'
