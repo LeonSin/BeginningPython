@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#!/usr/bin/python
 
 import string
 
@@ -67,8 +68,10 @@ print '*** SPAM * for * everyone!!! ***'.strip(' *!')
 printSeparateLines('translate')
 from string import maketrans
 table = maketrans('cs', 'kz') # translate dictionary for search
-print len(table)
+# Rprint len(table)
 print table[97:123]
 print maketrans('', '')[97:123]
 
 print 'this is an incredible test'.translate(table)
+
+print 'over'
