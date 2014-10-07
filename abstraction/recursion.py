@@ -22,3 +22,20 @@ def factorialWithRecursion(n):
 
 print factorial(10)
 print factorialWithRecursion(10)
+
+
+def power(x, n):
+    result = 1
+    for i in range(n):
+        result *= x
+    return result
+
+
+def powerWithRecursion(x, n):
+    if n == 0:
+        return 1
+    else:
+        return x * power(x, n-1)
+
+print power(3, 4)
+print powerWithRecursion(3, 4)
