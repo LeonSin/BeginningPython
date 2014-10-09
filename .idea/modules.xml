@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/BeginningPython.iml" filepath="$PROJECT_DIR$/.idea/BeginningPython.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../logParserForATMP/.idea/logParserForATMP.iml" filepath="$PROJECT_DIR$/../logParserForATMP/.idea/logParserForATMP.iml" />
     </modules>
   </component>
 </project>
