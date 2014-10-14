@@ -52,3 +52,24 @@ def search(sequence, number, lower, upper):
             return search(sequence, number, middle + 1, upper)
         else:
             return search(sequence, number, lower, middle)
+
+
+# Python has a few functions that are useful for this sort of “functional programming”:
+# map, filter, and reduce
+# In Python 3.0, these are moved to the functools module
+print map(str, range(10))
+# Equivalent to [str(i) for i in range(10)]
+
+def func(x):
+    return x.isalnum()
+
+seq = ["foo", "x41", "?!", "***"]
+print filter(func, seq)
+
+# Actually, there is a feature called lambda expressions,
+# which lets you define simple functions in-line
+# (primarily used with map, filter, and reduce):
+# "lamdba" is used in mathematics to indicate an anonymous functions.
+
+
+print filter(lambda x: x.isalnum(), seq)
